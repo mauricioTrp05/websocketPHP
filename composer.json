@@ -1,0 +1,13 @@
+{
+    "name": "mau/wsc3",
+    "description": "websocket nodejs con php",
+    "require": {
+        "elephantio/elephant.io": "^4.7"
+    },
+    "license": "propietary",
+    "authors": [
+        {
+            "name": "Mauricio Camarena Munoz Ledo"
+        }
+    ]
+}
