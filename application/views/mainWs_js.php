@@ -8,7 +8,7 @@ function updateMessage(message){
     // area.innerHTML += message + '\n';
 }
 const URL = '<?= URL_WS ?>';
-const socket = io(URL,{ transports: ['websocket'] });
+const socket = io(URL,{ transports: ['websocket'] ,autoConnect: false, reconnection: false});
 //
 socket.on('connect', () => {
     console.log('Successfully connected!');
@@ -35,4 +35,6 @@ socket.on('connect', () => {
         // Iniciar sesión y unirse a un room específico
         socket.emit('login', roomId);  // user123 es el identificador único del usuario
     });
+    //
+    $('#tblExample').dataTable();
 </script>
